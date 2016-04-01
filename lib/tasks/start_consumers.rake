@@ -1,8 +1,8 @@
 namespace "activemessaging" do
 
   desc 'Run all consumers'
-  task :start_consumers do
-    load File.dirname(__FILE__) + '/../../poller.rb'
+  task :start_consumers=> :environment do
+    ActiveMessaging::start
   end
   
 end
