@@ -47,3 +47,5 @@ begin
 rescue LoadError
   puts "Jeweler not available. Install it with: gem install jeweler"
 end
+
+import "./lib/tasks/start_consumers.rake"
